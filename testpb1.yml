@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name: my first playbook
+    shell: "echo 1st playbook is running..."
