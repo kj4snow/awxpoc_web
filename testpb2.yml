@@ -1,4 +1,4 @@
 - name: Install the latest version of Python3
   yum:
-    name: python2
+    name: python3
     state: latest
