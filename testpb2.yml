@@ -17,3 +17,5 @@
       dest: /root/webapp/
       clone: yes
       update: yes
+  - name: execute python script
+    script: /root/webapp/webapp.py
