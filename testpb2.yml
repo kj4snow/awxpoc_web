@@ -18,4 +18,4 @@
       clone: yes
       update: yes
   - name: execute python script
-    command: python3 /root/webapp/webapp.py
+    command: python3 /root/webapp/webapp.py &
