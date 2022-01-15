@@ -14,6 +14,6 @@
   - name: Clone a github repository
     git:
       repo: https://gitlab.com/kayjeng4/beetest1.git
-      dest: /root
+      dest: /root/webapp/
       clone: yes
       update: yes
