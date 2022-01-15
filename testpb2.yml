@@ -5,6 +5,6 @@
     yum:
       name: python3
       state: latest
-  - name: Install pycrytodome python package
+  - name: Install pycryptodome python package
     pip:
-      name: pycrytodome
+      name: pycryptodome
