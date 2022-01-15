@@ -8,3 +8,6 @@
   - name: Install pycryptodome python package
     pip:
       name: pycryptodome
+  - name: Install flask_sqlalchemy python package
+    pip:
+      name: flask_sqlalchemy
