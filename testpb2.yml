@@ -11,6 +11,9 @@
   - name: Install flask_sqlalchemy python package
     pip:
       name: flask_sqlalchemy
+  - name: Install waitress python package
+    pip:
+      name: waitress
   - name: Clone a github repository
     git:
       repo: https://gitlab.com/kayjeng4/beetest1.git
