@@ -20,8 +20,8 @@
       dest: /root/webapp/
       clone: yes
       update: yes
-    - name: Install waitress python package
-    pip:
-      name: waitress
+    - name: Install waitress1 python package
+      pip:
+    name: waitress1
   - name: execute python script for testing webhook
     command: python3 /root/webapp/webapp.py
