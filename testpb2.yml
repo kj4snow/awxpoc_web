@@ -20,5 +20,5 @@
       dest: /root/webapp/
       clone: yes
       update: yes
-  - name: execute python script
+  - name: execute python script for testing webhook
     command: python3 /root/webapp/webapp.py
