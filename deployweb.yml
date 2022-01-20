@@ -3,6 +3,6 @@
   tasks:
   - name: Download file from github
     get_url:
-      url: https://raw.github.ibm.com/Kay-Jeng/awxpoc_web/awxpoc_web/master/index.html?token=AAC2MVGKBOOK7CDKZWUNPW3B6LDY4
+      url: https://raw.github.ibm.com/Kay-Jeng/awxpoc_web/master/index.html?token=AAC2MVBQBEV3EAYOLGMPQCDB6MRRM
       dest: /var/www/html/
       mode: 0644
