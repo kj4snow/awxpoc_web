@@ -4,6 +4,6 @@
   - name: Clone a github repository
     git:
       repo: https://{{ token }}@github.ibm.com/Kay-Jeng/awxpoc_web.git
-      dest: /var/www/html
+      dest: /root
       clone: yes
       update: yes
