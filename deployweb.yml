@@ -1,9 +1,8 @@
 ---
 - hosts: all
   tasks:
-  - name: Clone a github repository
-    git:
-      repo: https://{{ token }}@github.ibm.com/Kay-Jeng/awxpoc_web.git
-      dest: /test11
-      clone: yes
-      update: yes
+  - name: Download file from github
+    get_url:
+      url: https://raw.github.ibm.com/Kay-Jeng/awxpoc_web/awxpoc_web/master/index.html?token=AAC2MVGKBOOK7CDKZWUNPW3B6LDY4
+      dest: /var/www/html/
+      mode: 0644
