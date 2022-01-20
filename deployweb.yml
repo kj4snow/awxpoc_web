@@ -3,7 +3,7 @@
   tasks:
   - name: Clone a github repository
     git:
-      repo: https://github.ibm.com/Kay-Jeng/awxpoc_web.git
+      repo: https://{{ token }}@github.ibm.com/Kay-Jeng/awxpoc_web.git
       dest: /var/www/html
       clone: yes
       update: yes
