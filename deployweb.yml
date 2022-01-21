@@ -4,7 +4,7 @@
   - name: Download file with custom HTTP headers
     get_url:
       url: https://github.ibm.com/api/v3/repos/Kay-Jeng/awxpoc_web/contents/index.html
-      dest: /var/www/html
+      dest: /root
       headers:
         Authorization: token d5f25774cc6b69fd048ab0efa3ca547e286d0987
         Accept: application/vnd.github.v3.raw
