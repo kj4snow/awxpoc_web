@@ -1,10 +1,12 @@
 ---
 - hosts: all
   tasks:
-  - name: Download file with custom HTTP headers
-    get_url:
-      url: https://github.ibm.com/api/v3/repos/Kay-Jeng/awxpoc_web/contents/index.html
-      dest: /var/www/html
-      headers:
-        Authorization: token {{ token }}
-        Accept: application/vnd.github.v3.raw
+  - name: Git test
+    git:
+      repo: git@github.ibm.com:Kay-Jeng/awxpoc_web.git
+      dest: /tmp/awxpoc
+  - name: copy webpage files
+    copy:
+      remote_src: True
+      src: /tmp/awxpoc/index.html
+      dest: /var/www/html/index.html
